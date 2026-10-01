@@ -15,6 +15,6 @@ def searchstu_man(stu_data):
         print("Student",name," not found.")
 
 
-
+print("welcome to student management database")
 students = addstu_man()
 searchstu_man(students)
