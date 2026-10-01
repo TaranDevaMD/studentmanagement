@@ -13,8 +13,12 @@ def searchstu_man(stu_data):
         print("Student",name," found in the record")
     else:
         print("Student",name," not found.")
-
-
+def delstu_man(stu_data):
+	name = input("enter name of the student to be removed")
+	stu_data.remove(name)
+	return stu_data
+	
 print("welcome to student management database")
 students = addstu_man()
 searchstu_man(students)
+updated_students = delstu_man(students)
